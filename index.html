@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <div class="top-navbar">
+    <div class="sorting-visualizer">Sorting Visualizer</div>
+    <span id="animated-text"></span><span class="cursor">|</span>
+    </div>
+
+  <!-- Hamburger icon to toggle sidebar -->
+  <div class="hamburger" onclick="toggleNav()">
+    &#9776; <!-- This is the hamburger icon -->
+  </div>
+
+  <!-- Sidebar/Navbar -->
+  <div id="sidenav" class="sidenav">
+    <br><br>
+    <a href="index.html" class="home">&#127968; Home</a>
+    <hr> <!-- Adds a separator -->
+
+    <div class="category">LOGARITHMIC</div>
+    <a href="quicksort.html">Quick Sort</a>
+    <a href="mergesort.html">Merge Sort</a>
+    <a href="heapsort.html">Heap Sort</a>
+
+    <div class="category">QUADRATIC</div>
+    <a href="bubblesort.html">Bubble Sort</a>
+    <a href="selectionsort.html">Selection Sort</a>
+    <a href="insertionsort.html">Insertion Sort</a>
+
+    <!-- NON-COMPARISON BASED CATEGORY -->
+    <div class="category">NON-COMPARISON BASED</div>
+    <a href="countsort.html">Counting Sort</a>
+    <a href="radixsort.html">Radix Sort</a>
+    <a href="bucketsort.html">Bucket Sort</a>
+
+    <div class="category">WEIRD</div>
+    <a href="shellsort.html">Shell Sort</a>
+    <a href="combsort.html">Comb Sort</a>
+    
+    <div class="category">CUSTOM</div>
+    <a href="customsort.html">Custom Sort</a></br>
+  </div>
+
+  <!-- welcome banner on home page -->
+  <div class="welcome-banner">
+    <h1>Welcome to the Sorting Visualizer!</h1>
+    <p>Explore various sorting algorithms <br> with visualizations.</p>
+  </div>  
+
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
