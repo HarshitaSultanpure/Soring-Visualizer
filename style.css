@@ -30,7 +30,7 @@
 #sidenav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #sidenav ul li a:hover {
@@ -41,10 +41,10 @@
     margin-left: 250px;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-image: url('https://img.freepik.com/free-vector/digital-technology-background-vector-with-hexagon-border-dark-purple-tone_53876-126074.jpg?semt=ais_hybrid');
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAxAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQAGB//EABoQAQEBAAMBAAAAAAAAAAAAAAABEQIhMUH/xAAYAQEBAQEBAAAAAAAAAAAAAAACAwEGBf/EABcRAQEBAQAAAAAAAAAAAAAAAAEAEQL/2gAMAwEAAhEDEQA/APPFiFHaU8sUSFIxmFYUiSGDULFEkKQVmFSiYUgTCshJCkFmFZCSQoMy0hSNIQ1AtCSRYLMJQo0iwFqBUpGkKDswtCkSHIDULMWMyVyOLGKevZuaCsLEhCtQKwohQZlcWNCkBnUpEhQVmFociSFBmFYsSHB2oFoUiLAWQVhyJIUFqBXFkbCgVArISFBWoVhSJCgMgsxYjNnlyUOJIUj2tuaC0OJIWDPLQmiwFqBKLGxZBWYVhRJCkBmSi4kKQVmFZCQoK1AsUjYUgbMKxWkWQdqBWHEk6KC1AsUaQoGyCsKRCgtQLMuMyeXJQo0hR7LcyFoSQhagVhNFgTCsLEkOCzLSEywWYWhxJCgtQtCkZZAZhWE0WA1CsOJCjGYWKNCkBZloWNCkBqBaQ8SELUKKsisnlyMKIUj2tuZC0OJCBnWFiQpBWZadnGkUGZYokhwWoWKNIuCswrCkSEMwqUmpxhwKgWkKNiyAtQrIcSRRkFoc8aFJ0NQLQsSQ5AahbGLEZPLkpFaFI9puZKyLIxQVmFYsjSFIFQKqxQWQWhRlFqBUpEkKQGoVkJosgswrCjRYC1CsnZcUhTwWYVhRJ2Ug7MKwokOAtQLSFI0WDUyrKw7blyMhJIePauaC0hRoUgrUyshRIsFkFYUSQhWplZFkSHA2oFZCSFgsy0hxJCkFmFijQomtQKyFJqQoKzCshSJhSC1ArIUSQoFQKrI0KCswsrYozy5GFIkJ7TcyFYcSRWTLHEkKQJhVWhCzC0hyJIQbUCxcUh4DMLQo0KQWoWhyJxKDMLSE0KQZhY4kLAqBWKxSC1C0KRsKBUCzEzJ3IyFEh49puXC2LI0KQdqBWRY0KQVmUkPjEhwFqBbCkQpBZhWQo0iyAtQKyFIkh4OzC0hSJIcBqBaQ5EKCswtISSEO1ArIUSFIDUCshSJIWCsyrLjMty5KL9ZnttzJKErAzLQozA1OZwozCzJQojDMkcZgahUmYZk4UZhqEoUZgahKLFYWZUozBUJwmYWZVmZlt//Z');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 200vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
