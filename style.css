@@ -1,190 +1,65 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('https://img.freepik.com/free-vector/digital-technology-background-vector-with-hexagon-border-dark-purple-tone_53876-126074.jpg?semt=ais_hybrid');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* Ensures the navbar and content are stacked */
-}
-
-/* Top Navbar styles */
-.top-navbar {
-    background-color: #111;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between; /* Aligns items to opposite ends */
-    align-items: center;
-}
-
-/* Sorting Visualizer text animation */
-.sorting-visualizer {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px;
-    animation: slide 8s linear infinite, color-change 8s linear infinite;
-    white-space: nowrap; /* Prevents text from wrapping */
-}
-
-/* Sliding animation */
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(calc(100vw - 250px)); /* Moves to the right */
-    }
-    100% {
-        transform: translateX(0); /* Returns to the left */
-    }
-}
-
-/* Color changing animation */
-@keyframes color-change {
-    0% {
-        color: white;
-    }
-    25% {
-        color: #ff5733; /* Orange */
-    }
-    50% {
-        color: #33ff57; /* Green */
-    }
-    75% {
-        color: #3357ff; /* Blue */
-    }
-    100% {
-        color: white;
-    }
-}
-
-/* Hamburger Icon */
-.hamburger {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 15px;
-    position: absolute;
-    top: -5px;
-    left: 0px;
-    z-index: 100;
-}
-
 /* Sidebar styles */
-.sidenav {
+#sidenav {
     height: 100%;
     width: 250px;
     position: fixed;
     top: 0;
-    left: -250px; /* Initially hidden */
+    left: 0;
     background-color: #111;
     padding-top: 20px;
-    transition: 0.3s;
-    overflow-y: auto; /* Allows scrolling for long content */
-}
-
-/* Sidebar links */
-.sidenav a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 10px 15px;
-    text-transform: uppercase;
     color: white;
-    display: block;
-}
-
-/* Apply margin to all sidebar links except 'Home' */
-.sidenav .home {
-    margin: 0px;
-    
-    text-transform: uppercase;
-}
-
-.sidenav a:hover {
-    background-color: #7033ff; /* Bright orange hover effect */
-    color: white;
-}
-
-/* Sidebar Category Styling */
-.sidenav .category {
-    color: #7a33ff; /* Highlight category title with a different color */
-    font-size: 17px;
-    margin: 10px 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-bottom: 1px solid #575757; /* Adds a subtle underline */
-    padding-bottom: 5px;
-}
-
-/* Separator Styling */
-.sidenav hr {
-    border: 0;
-    border-top: 1px solid #575757;
-    margin: 10px 15px;
-}
-
-/* Main content styles */
-.main-content {
-    margin-top: 60px; /* Offset the navbar height */
-    padding: 20px;
-    width: 100%;
-    transition: margin-left 0.3s;
-}
-
-/* For when the sidebar is open */
-.sidenav.open {
-    left: 0;
-}
-
-/* When sidebar is open, clip the banner to hide the part overlapping with the sidebar */
-.sidenav.open ~ .welcome-banner {
-    clip-path: inset(0 0 0 250px); /* Clips the right side of the banner */
-}
-
-.main-content.shifted {
-    margin-left: 250px;
-}
-
-/* welcome banner */
-.welcome-banner {
-    position: fixed; /* Fixes the banner to the left side */
-    height: 100%; /* Makes the banner cover the full height */
-    width: 600px; /* Adjusts the width */
-    color: white;
-    padding: 120px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: left; /* Centers content vertically */
-    animation: fadeIn 3s ease-out;
-    z-index: 10; /* Ensures the banner is below the sidebar */
-    transition: clip-path 0.3s ease-out; /* Smooth transition for hiding the overlap */
-  }
-  
-  .welcome-banner h1 {
-    font-size: 80px;
-    font-weight: bold;
-    margin-bottom: -10px;
-  }
-  
-  .welcome-banner p {
-    font-size: 27px;
-    margin-left: 50px;
-    width: 600px;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+    align-items: center;
+}
 
-  
-  
+#sidenav h2 {
+    margin-bottom: 20px;
+}
+
+#sidenav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidenav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+#sidenav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#sidenav ul li a:hover {
+    background-color: #575757;
+}
+
+#main-content {
+    margin-left: 250px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/digital-technology-background-vector-with-hexagon-border-dark-purple-tone_53876-126074.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#container {
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar {
+    width: 30px;
+    background-color: black;
+    margin: 0.5px;
+    transition: height 0.1s ease-in-out;
+}
